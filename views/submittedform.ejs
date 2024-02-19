@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/public/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+    <link rel="icon" href="images/TWT.ico" type="images/x-icon">
+    <link rel="stylesheet" type="text/css" href="/public/css?family=Poppins:300,400,500,600,700,900%7CLato%7CKalam:300,400,700">
+    <link rel="stylesheet" href="/public/styles/bootstrap.css">
+    <link rel="stylesheet" href="/public/styles/fonts.css">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-iaV2QJ4c0oSD66YRRG5sYwYJv0vSZ7n2L9MprZ0l+H+O0qEvRX5+5fjqyCrpFjO9wJpTWcH4f6JxFd4QxhD+Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-bell">
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <header class="section page-header">
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="120px" data-xxl-stick-up-offset="140px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                    <div class="rd-navbar-aside-outer">
+                        <div class="rd-navbar-aside">
+                            <div class="rd-navbar-collapse">
+                                <div class="contacts-ruth">
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><span class="linear-icon icon linearicons-map-marker"></span></div>
+                                        <div class="unit-body"><a href="https://www.google.com/maps/dir/Current+Location/108+University+Ave,+Waterloo,+ON+N2J+2W2" target="_blank">108 University Ave<br>Waterloo, ON N2J 2W2</a></div>
+                                    </div>
+                                </div><a class="button button-primary-outline button-sm button-icon button-icon-left" href="#"><span class="icon mdi mdi-email-outline icon-size-m"></span>Get in touch</a>
+                            </div>
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <div class="rd-navbar-brand"><a class="brand" href="/home">TrainWithTail</a></div>
+                            </div>
+                        
+                        <div class="rd-navbar-button"><a class="button button-primary-outline button-sm button-icon button-icon-left" href="/ContactForm"><span class="icon mdi mdi-email-outline icon-size-m"></span>Book Training</a></div>
+                    </div>
+                </div>
+                    
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <div class="rd-navbar-nav-wrap">
+                                <ul class="rd-navbar-nav">
+                                    <% if (session.username) { %>
+                                        <% if (session.role === 'Customer') { %>
+                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="/home">Home</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/Buy">Shop</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/aboutus">About Us</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/customerlogin">Behavioral Analysis</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/customerlogin">Progress Check</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/logout-success">Logout</a>
+                                            </li>
+                                        <% } else if (session.role === 'Trainer') { %>
+                                            <li class="rd-nav-item active"><a class="rd-nav-link" href="/home">Home</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/Buy">Pet Details</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/aboutus">About Us</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/customerlogin">Behavioral Analysis</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/customerlogin">Progress Check</a>
+                                            </li>
+                                            <li class="rd-nav-item"><a class="rd-nav-link" href="/logout-success">Logout</a>
+                                            </li>
+                                        <% } %>
+                                    <% } else { %>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="/home">Home</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/Buy">Shop</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/aboutus">About Us</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/customerlogin">Pet Parent Login</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/trainerlogin">Trainer Login</a>
+                                        </li>
+                                    <% } %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <div class="thankyou" style="margin-bottom: 160px; margin-top: 100px;">
+        <h1>Thank You!</h1>
+        <p>Your form has been submitted successfully. We will contact you soon.</p>
+    </div>
+    
+
+    <div class="footer-modern-panel text-center">
+        <div class="container">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>TrainWithTail</span><span>. All Rights Reserved.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+</div>
+<div class="snackbars" id="form-output-global"></div>
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

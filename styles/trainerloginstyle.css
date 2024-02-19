@@ -1,0 +1,103 @@
+.login-container {
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 31%;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+    padding: 40px;
+    background-color: #82d3ef;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    animation: fadeInDown 1s ease;
+    color: #333; /* Text color */
+}
+
+h1 {
+    color: #fdfdfd; /* Heading color */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    animation: fadeIn 1s ease;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffd700; /* Highlight border on focus */
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    animation: fadeIn 1s ease;
+}
+
+button:hover {
+    background-color: #ffd700; /* Change the color on hover */
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

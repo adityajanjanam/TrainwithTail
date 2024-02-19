@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This ensures the body takes at least the full height of the viewport */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-image: url('/public/images/pet3.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 60vh;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    flex: 1; /* This pushes the footer to the bottom */
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+    margin-top: auto; /* This ensures the footer is pushed to the bottom */
+}
+
+.logout-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logout-container h3 {
+    color: #000000;
+    font-size: 24px;
+}

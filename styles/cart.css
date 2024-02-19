@@ -1,0 +1,15 @@
+/* Adjust table layout */
+.table-custom {
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 30px;
+  }
+  
+  .table-custom th,
+  .table-custom td {
+    padding: 5px;
+    text-align: center;
+  }
+  
+
+  

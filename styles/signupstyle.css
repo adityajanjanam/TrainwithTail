@@ -1,0 +1,112 @@
+/* public/styles/signupstyle.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url('/public/images/pet3.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 60vh;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the color on hover */
+}
+
+main {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.signup-container {
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: -45px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+    padding: 40px;
+    background-color: #82d3ef;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    animation: fadeInDown 1s ease;
+    color: #333; /* Text color */
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffd700; /* Change the color on hover */
+}
+
+footer {
+    background-color: #000000;
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+    margin-top: auto; /* This ensures the footer is pushed to the bottom */
+}

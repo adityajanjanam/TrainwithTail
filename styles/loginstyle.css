@@ -1,0 +1,76 @@
+.login-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #82d3ef;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    animation: fadeInDown 1s ease;
+    color: #333; /* Text color */
+}
+
+h1 {
+    color: #fdfdfd; /* Heading color */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    animation: fadeIn 1s ease;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffd700; /* Highlight border on focus */
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    animation: fadeIn 1s ease;
+}
+
+.login-container a {
+    color: antiquewhite;
+}
+
+.login-container a:hover {
+    color: #ffd700;
+}
+
+button:hover {
+    background-color: #ffd700; /* Change the color on hover */
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
